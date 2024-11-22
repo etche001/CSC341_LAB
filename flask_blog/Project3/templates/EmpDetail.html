@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Detail Information for {{data['ENAME']}}</title>
+    </head>
+    <body>
+        <h1>Hello {{data['ENAME']}}</h1>
+
+        <form action="/post/emp/{{data['EMPNO']}}" method="post">
+            <label for="ename">Name:</label>
+            <input type="text" id="ename" name="ename" value="{{data['ENAME']}}"><br><br>
+            <label for="job">Job:</label>
+            <input type="text" id="job" name="job" value="{{data['JOB']}}"><br><br>
+            <label for="mgr">Manager:</label>
+            <input type="text" id="mgr" name="mgr" value="{{data['MGR']}}"><br><br>
+            <label for="sal">Salary:</label>
+            <input type="text" id="sal" name="sal" value="{{data['SAL']}}"><br><br>
+            <label for="deptno">Dept no:</label>
+            <input type="text" id="deptno" name="deptno" value="{{data['DEPTNO']}}"><br><br>
+            <input type="submit" value="Update">
+          </form>        
+          <form action="/delete/emp/{{data['EMPNO']}}" method="post">
+            <input type="submit" value="Delete">
+          </form>
+    </body>
+</html>

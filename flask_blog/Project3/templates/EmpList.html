@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>{{ title }}</title>
+    </head>
+    <body>
+        {% if not data  %}
+            <h1>It does not manage employees !!</h1> 
+        {% else %}
+            {% for row in data %}
+                <h1><a href=/emp/{{row['EMPNO']}}>{{row['ENAME']}}</a>  <a href=/empfilter/{{row['EMPNO']}}>employees...</a></h1> 
+            {% endfor %}
+        {% endif %}
+	  <form action="/create" method="get">
+		<input type="submit" value="Create">
+	  </form>
+    </body>
+</html>
