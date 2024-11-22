@@ -7,9 +7,9 @@ from flask import render_template
 from flask import request
 from flask import redirect
 
-db_user = "test"
-db_password = "Fall2024Fall20241031"
-db_connect = "(description= (retry_count=20)(retry_delay=3)(address=(protocol=tcps)(port=1522)(host=adb.us-ashburn-1.oraclecloud.com))(connect_data=(service_name=t0o4ohckoaairsp_o1oou2wrt1y9wcit_tp.adb.oraclecloud.com))(security=(ssl_server_dn_match=yes)))"
+db_user = "ADMIN"
+db_password = "Tigbuz-5subny-nancoz"
+db_connect = "(description= (retry_count=20)(retry_delay=3)(address=(protocol=tcps)(port=1522)(host=adb.us-ashburn-1.oraclecloud.com))(connect_data=(service_name=g5450923afc2a36_d14ewdn3cnxtt2jv_tp.adb.oraclecloud.com))(security=(ssl_server_dn_match=yes)))"
 
 def init_session(connection, requestedTag_ignored):
     cursor = connection.cursor()
